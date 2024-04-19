@@ -1,0 +1,155 @@
+body{
+    background-color: #111;
+}
+
+#box1{
+    background-color: grey;
+    border-radius: 40px;
+    height: 330px;
+    width: 600px;
+    position:absolute;
+    left: 7%;
+    top: 50px;
+}
+
+#box2{
+    background-color: grey;
+    border-radius: 40px;
+    height: 330px;
+    width: 600px;
+    position: absolute;
+    right: 7%;
+    top: 50px;
+    justify-content: center;
+}
+
+#profilePhoto{
+    border-radius: 50%;
+    width: 200px;
+    position: sticky;
+    margin-top: 4;
+    margin-left: 80px;
+    margin-left: 200px;
+
+}
+/*
+input{
+      display: none;    
+}
+*/
+
+#photoInput{
+    border-radius: 25px;
+    padding: 10px;
+    width: 300px;
+    font-size: large;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+#photoInput:hover{
+    cursor: pointer;
+    background-color: rgb(57, 50, 50);
+}
+#photoInput1:hover{
+    cursor: pointer;
+    background-color: rgb(57, 50, 50);
+}
+#photoInput1{
+    border-radius: 25px;
+    padding: 10px;
+    width: 200px;
+    font-size: large;
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+    position: sticky;
+
+}
+
+#label1{
+    display: block;
+    width: 200px;
+    background-color: black;
+    margin: 10px auto;
+    position: sticky;
+    left: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: large;
+    color: aliceblue;
+}
+
+#box3{
+    color: white;
+    width: 900px;
+    background-color: rgb(97, 97, 97);
+    text-align: center;
+    margin: auto;
+    margin-top: 400px;
+}
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#imageInput{
+    background-color: #111;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border: 5px solid black;
+    border-radius: 30px;
+    width: 250px;
+    align-content: center;
+}
+#imageInput:hover{
+    box-shadow:0 5px 9px #323f4c;
+    cursor: pointer;
+}
+#addimg{
+    background-color: #111;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border: 5px solid black;
+    border-radius: 30px;
+    width: 250px;
+}
+#addimg:hover{
+    box-shadow:0 5px 9px #323f4c;
+    cursor: pointer;
+}
+#logo1{
+    border-radius: 500px;
+    margin-left: 140px;
+    width: fit-content;
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+    animation: fade-in-left 2s ease ;
+    position:sticky;
+}   
+@keyframes fade-in-left {
+0% {
+opacity: 0;
+transform: translateX(-20px);
+}
+100% {
+opacity: 1;
+transform: translateX(0);
+}
+}
+.gallery img {
+    margin: 10px; /* Adjust this value as per your preference */
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+footer{
+    position: relative; 
+    bottom: 0px;
+}
+

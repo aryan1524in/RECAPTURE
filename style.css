@@ -1,0 +1,164 @@
+body{
+   margin: 0;
+   padding: 0;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   background-color: #111;
+
+}
+header{
+    background-color: #111;
+    height: 80px;
+    top: 0;
+    font-size: 20px;
+   margin-top: 0;
+   margin: 0;
+   }
+   .button1 {
+ background-color: transparent ;
+ border: none;
+ color: white;
+ padding: 22px 32px;
+ text-align: center;
+ text-decoration:solid;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+ position: absolute;
+           top: 10px;
+           right: 10px;
+           border-radius: 30px;
+}
+button{
+   background-color: transparent ;
+ border: none;
+ color: white;
+ padding: 22px 32px;
+ text-align: center;
+ text-decoration:solid;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+}
+button:hover{
+   box-shadow:0 5px 9px #323f4c;
+}
+.box1{
+   height: 650px;
+   width: 40%;
+   background-color: #111;
+   object-fit: contain;
+}
+
+
+.button1 {width: 100px;}
+.button1:hover{
+           box-shadow:0 5px 9px #323f4c;
+       }
+   #logo1{
+       border-radius: 500px;
+       margin-left: 170px;
+       width: fit-content;
+       width: 350px;
+       height: 350px;
+       margin-top: 150px;
+       animation: fade-in-left 2s ease ;
+       position:sticky;
+   }   
+   @keyframes fade-in-left {
+ 0% {
+   opacity: 0;
+   transform: translateX(-20px);
+ }
+ 100% {
+   opacity: 1;
+   transform: translateX(0);
+ }
+}
+   #logo1:hover{
+       animation-name: rotate;
+   animation-duration: 5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   } 
+   @keyframes rotate{
+   from{ transform: rotate(-360deg); }
+   to{ transform: rotate(360deg); }
+}
+.box2{
+   height: 650px;
+   width: 60%;
+   background-color: gray;
+   object-fit: contain;
+   float: right;
+   
+}
+.container{
+   display: flex;
+   flex-direction: row;
+}
+.b2img1{
+   height: inherit;
+   width: 60%;   
+}
+.img-contain{
+   height: inherit;
+   background-color: inherit;
+   float: right;
+   width: 40%;
+}
+
+.b2img2{
+   width: 250px;
+float: right;
+margin-top: 224px;
+}
+
+.container2{
+   height: 600px;
+   background-color: #111;
+   background-image: url(https://assets-global.website-files.com/64e27cdd42db7ecf119d5e61/656fb95f04a82a179627dae3_banner-cta-p-2000.jpg);
+   background-size: cover;
+   background-position: center;
+   background-size: 100%;
+   background-repeat: no-repeat;
+
+}
+.vertical-text{
+   writing-mode: vertical-rl;
+   font-size: 45px;
+    line-height: 1.5; 
+    white-space: nowrap; 
+    margin: 0; 
+    padding: 10px; 
+}
+.vertical-text1{
+
+   font-size: 45px;
+    line-height: 1.5; 
+    white-space: nowrap; 
+    margin: 0; 
+    padding: 10px; 
+    float: right;
+    
+}
+
+.text{
+   font-size: 25px ;
+   color: aliceblue;
+   padding: 10px;
+   
+}
+.text1{
+   font-size: 50px;
+   color: lightgray;
+   text-shadow: 2px 2px 2px black;
+}
+footer{
+   background-color: #111;
+   height: 50px;
+   color: white;
+}

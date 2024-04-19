@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Recapture</title>
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #111;
+        font-family: Arial, Helvetica, sans-serif;
+        background-size: contain;
+      }
+      .container {
+        background-color: transparent;
+        width: 480px;
+        height: 650px;
+        position: absolute;
+        margin: auto;
+        top: 5%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        color: #ccc;
+        border-radius: 25%;
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+      }
+      .container:hover{
+        box-shadow:2px 14px 9px #323f4c;
+      }
+      .content {
+        width: 56%;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        text-align: center;
+      }
+       
+      .img1{
+        width: 220px;
+        position: relative;
+        top: 25px;
+        border-radius: 0%;
+      }
+      .header {
+        font-size: 32px;
+        font-weight: 700;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        line-height: 46px;
+      }
+      .detail {
+        width: 100%;
+        height: 48px;
+        margin: 5px;
+        padding: 15px;
+        font-size: 15px;
+        color: gray;
+        border: 2px solid rgb(218, 214, 214);
+        border-radius: 15px;
+      }
+      .detail:focus {
+        box-shadow: 0px -7px 3px -2px rgba(15, 91, 231, 0.4),
+          0px 7px 3px -2px rgba(15, 91, 231, 0.4),
+          7px 0px 3px -2px rgba(15, 91, 231, 0.4),
+          -7px 0px 3px -2px rgba(15, 91, 231, 0.4);
+        outline: none;
+      }
+      
+      h4 {
+        font-size: 13px;
+        font-weight: 700;
+        position: relative;
+        left: -60px;
+        margin: 5px;
+      }
+      
+      .btn {
+        width: 100%;
+        height: 40px;
+        border: hidden;
+        border-radius: 20px;
+        font-size: 18px;
+        margin: 5px 0px;
+      }
+      
+      .int {
+        background-color: #dadada;
+        margin: 10px 0px;
+        color: black;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .int:hover{
+        background-color: lightblue;
+        box-shadow:0 2px 5px #323f4c;
+      }
+      
+      .or {
+        font-size: 15px;
+        font-weight: 700;
+        margin: 10px 0px;
+      }
+      
+      .fbk {
+        background-color: rgb(9, 128, 240);
+        margin: 5px 0px;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .fbk a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+      .fbk:hover{
+        background-color: rgb(8, 110, 206);
+      }
+      .ggl{
+        text-align: center;
+        background-color: #ccc;
+      }
+      .ggl a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+      .ggl:hover{
+        background-color: #a0a0a0;
+      }
+      
+      footer p {
+        font-size: 12px;
+        margin: 10px;
+        opacity: 0.7;
+      }
+      p:last-child {
+        opacity: 1;
+      }
+      hr {
+        width: 50%;
+        opacity: 0.4;
+        margin-left: 25%;
+      }
+      .upbtn{
+        position: relative;
+        top: 50px;
+        left: 140px;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        width: 126px;
+        padding: 11px 0px;
+        background-color: rgb(241, 236, 236);
+        border-radius: 20px;
+      }</style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+          <img src="logo2.png" alt="Recapture logo" class="img1" />
+          <p class="header">Log in to see more</p>
+        <form  onsubmit="return validateForm()" action="index.html">
+          <input type="email" placeholder="Email" class="detail" id="em"/><br />
+          <input type="password" placeholder="Password" class="detail" id="pass" />
+  
+         <a href="#"> <h4>Forgot your password?</h4></a>
+  
+          <button class="btn int" type="submit">Log in</button>
+          <p class="or">OR</p>
+          <button class="btn fbk">
+            <i
+              class="fab fa-facebook fa-lg"
+              style="color: white; padding-right: 10px"
+            ></i
+            ><a href="#">Continue with Facebook</a></button
+          ><br />
+          <button class="btn ggl">
+            <i
+              class="fab fa-google"
+            ></i
+            ><a href="#">Continue with Google</a>
+          </button>
+  
+          <footer>
+            <p>
+              By continuing, you agree to Recapture's
+              <b>Terms of Service, Privacy policy.</b>
+            </p>
+            <hr />
+            <p>Not on Recapture yet? <a href="signup.html"> Sign up</a></p>
+          </footer>
+        </form>
+        </div>
+      </div>
+      <div class="upbtn">  <a href="signup.html" style="color: #111;">Sign up</a></div>
+<script src="loginn.js"></script>
+</body>
+</html>
